@@ -224,10 +224,10 @@
           })
             .then((response) => response.json())
             .then((html) => {
-              alert("Submitted");
               submitBtn.innerText = "Submit";
               submitBtn.disabled = false;
               form.reset(); // Reset form fields after successful submission
+              window.location.href = "success.html";
             })
             .catch((error) => {
               console.error("Error:", error);
