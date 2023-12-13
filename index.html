@@ -197,53 +197,32 @@
       method="post"
       id="sheetdb-form"
     >
-      <input type="text" name="data[name]" placeholder="Full Name" required />
-      <label for="class">Section</label>
-      <select name="data[class]" id="class" required>
-        <option value="A">A</option>
-        <option value="B">B</option>
-        <option value="C">C</option>
-        <option value="D">D</option>
+      <label for="name">Your Name</label>
+      <input
+        type="text"
+        name="data[name]"
+        id="name"
+        placeholder="Your Name"
+        required
+      />
+      <h2>Which location do you find the best for picnic</h2>
+      <select name="data[location]" id="" aria-placeholder="select">
+        <option value="null"><------other------></option>
+        <option value="Rivaah">Rivaah</option>
+        <option value="Dalmanchal">Dalmanchal</option>
+        <option value="Golden_Leaf">Golden Leaf</option>
+        <option value="Wave">Wave International</option>
+        <option value="Utsav">Utsav Resort</option>
       </select>
-      <h2>Which color combination do you find the best?</h2>
-      <div style="color: white; font-weight: bold">Click TO zoom in</div>
-      <div
-        style="
-          color: rgb(255, 138, 138);
-          font-weight: bold;
-          text-decoration: underline;
-        "
-      >
-        **Please Select From drop Down List
-      </div>
-      <div class="hoodie-preview">
-        <img src="black_hoodie.jpeg" alt="Black Hoodie" class="hoodie-image" />
-        <img
-          src="cosmic_latte_hoodie.jpeg"
-          alt="Cosmic Latte Hoodie"
-          class="hoodie-image"
-        />
-        <img
-          src="dark_brown_hoodie.jpeg"
-          alt="Dark Brown Hoodie"
-          class="hoodie-image"
-        />
-        <img src="blue_hoodie.jpeg" alt="Blue Hoodie" class="hoodie-image" />
-        <img
-          src="purple_hoodie.jpeg"
-          alt="Purple Hoodie"
-          class="hoodie-image"
-        />
-      </div>
-
-      <select name="data[colorIndex]" id="" aria-placeholder="select">
-        <option value="null"><------Select------></option>
-        <option value="1">Black</option>
-        <option value="2">Cosmic Latte</option>
-        <option value="3">Dark Brown</option>
-        <option value="4">Blue</option>
-        <option value="5">Purple</option>
-      </select>
+      <h3 style="color: white">
+        Any other locations you would like to suggest:
+      </h3>
+      <input
+        type="text"
+        name="data[other_location]"
+        id="other_location"
+        placeholder="Other "
+      />
       <button type="submit" id="submitBtn">Submit</button>
     </form>
 
